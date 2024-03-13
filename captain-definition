@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "templateId": "node",
+  "defaultConfig": {
+    "preDeploy": {
+      "commands": [
+        "npm install --production"
+      ]
+    },
+    "start": {
+      "web": "npm start"
+    }
+  },
+  "healthCheckPath": "/healthcheck",
+  "notExposeAsWebApp": true,
+  "dockerfileLines": [
+    "COPY . /usr/src/app"
+  ]
+}
