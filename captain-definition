@@ -1,16 +1,5 @@
 {
   "schemaVersion": 2,
-  "templateId": "node",
-  "defaultConfig": {
-    "preDeploy": {
-      "commands": [
-        "yarn install --production"
-      ]
-    },
-    "start": {
-      "web": "node dist/server.js"
-    }
-  },
   "dockerfileLines": [
     "FROM node:18.8-alpine as base",
     "",
